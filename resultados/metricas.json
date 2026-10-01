@@ -1,0 +1,314 @@
+{
+  "dolar": {
+    "title": "Precio del dólar",
+    "target": "Precio_Dolar",
+    "intercept": 3985.7832908942446,
+    "coefficients": {
+      "Dia": {
+        "coef": 4.984338715884636,
+        "std_coef": 0.9948213227860767,
+        "p_value": 0.0
+      },
+      "Inflacion": {
+        "coef": -870.731708311471,
+        "std_coef": -0.0059014640632202384,
+        "p_value": 0.09596653401385102
+      },
+      "Tasa_interes": {
+        "coef": -1.3774312878080646,
+        "std_coef": -0.0009304688806166312,
+        "p_value": 0.7972478128005629
+      }
+    },
+    "metrics": {
+      "mse_train": 2580.46203026235,
+      "mse_test": 2376.970876572482,
+      "rmse_test": 48.7541882977502,
+      "r2_train": 0.9947566971157091,
+      "r2_test": 0.9963128117569109,
+      "n_train": 400,
+      "n_test": 100
+    },
+    "data": {
+      "rows": 500,
+      "nulls": 0,
+      "duplicates": 0,
+      "describe": {
+        "Dia": {
+          "count": 500.0,
+          "mean": 250.5,
+          "std": 144.4818,
+          "min": 1.0,
+          "25%": 125.75,
+          "50%": 250.5,
+          "75%": 375.25,
+          "max": 500.0
+        },
+        "Inflacion": {
+          "count": 500.0,
+          "mean": 0.02,
+          "std": 0.0049,
+          "min": 0.0038,
+          "25%": 0.0165,
+          "50%": 0.0201,
+          "75%": 0.0232,
+          "max": 0.0393
+        },
+        "Tasa_interes": {
+          "count": 500.0,
+          "mean": 5.0159,
+          "std": 0.489,
+          "min": 3.6516,
+          "25%": 4.7024,
+          "50%": 5.0143,
+          "75%": 5.3256,
+          "max": 6.3162
+        },
+        "Precio_Dolar": {
+          "count": 500.0,
+          "mean": 5211.7719,
+          "std": 723.8952,
+          "min": 3940.3613,
+          "25%": 4604.885,
+          "50%": 5218.7911,
+          "75%": 5825.2353,
+          "max": 6553.5986
+        }
+      },
+      "correlation": {
+        "Dia": {
+          "Dia": 1.0,
+          "Inflacion": 0.0218,
+          "Tasa_interes": 0.076,
+          "Precio_Dolar": 0.9976
+        },
+        "Inflacion": {
+          "Dia": 0.0218,
+          "Inflacion": 1.0,
+          "Tasa_interes": -0.0757,
+          "Precio_Dolar": 0.0196
+        },
+        "Tasa_interes": {
+          "Dia": 0.076,
+          "Inflacion": -0.0757,
+          "Tasa_interes": 1.0,
+          "Precio_Dolar": 0.0743
+        },
+        "Precio_Dolar": {
+          "Dia": 0.9976,
+          "Inflacion": 0.0196,
+          "Tasa_interes": 0.0743,
+          "Precio_Dolar": 1.0
+        }
+      }
+    }
+  },
+  "glucosa": {
+    "title": "Nivel de glucosa",
+    "target": "Nivel_Glucosa",
+    "intercept": 65.86086530452523,
+    "coefficients": {
+      "Edad": {
+        "coef": 1.2265900344995722,
+        "std_coef": 0.7870366834211507,
+        "p_value": 0.0
+      },
+      "IMC": {
+        "coef": 0.933373056035101,
+        "std_coef": 0.13598290877764288,
+        "p_value": 1.3125822138484449e-21
+      },
+      "Actividad_Fisica": {
+        "coef": -2.0852763430432826,
+        "std_coef": -0.22209893248741672,
+        "p_value": 6.515352759344751e-53
+      }
+    },
+    "metrics": {
+      "mse_train": 235.51368494080378,
+      "mse_test": 233.6930004508583,
+      "rmse_test": 15.28702065318348,
+      "r2_train": 0.686212181790227,
+      "r2_test": 0.6813715865404839,
+      "n_train": 1600,
+      "n_test": 400
+    },
+    "data": {
+      "rows": 2000,
+      "nulls": 0,
+      "duplicates": 0,
+      "describe": {
+        "Edad": {
+          "count": 2000.0,
+          "mean": 49.157,
+          "std": 17.5445,
+          "min": 20.0,
+          "25%": 34.0,
+          "50%": 50.0,
+          "75%": 64.0,
+          "max": 79.0
+        },
+        "IMC": {
+          "count": 2000.0,
+          "mean": 24.9633,
+          "std": 3.9836,
+          "min": 10.5867,
+          "25%": 22.3445,
+          "50%": 25.0287,
+          "75%": 27.7511,
+          "max": 39.4302
+        },
+        "Actividad_Fisica": {
+          "count": 2000.0,
+          "mean": 4.6645,
+          "std": 2.9122,
+          "min": 0.0,
+          "25%": 2.0,
+          "50%": 5.0,
+          "75%": 7.0,
+          "max": 9.0
+        },
+        "Nivel_Glucosa": {
+          "count": 2000.0,
+          "mean": 139.6301,
+          "std": 27.3429,
+          "min": 43.4159,
+          "25%": 119.0676,
+          "50%": 139.9673,
+          "75%": 159.2085,
+          "max": 227.5607
+        }
+      },
+      "correlation": {
+        "Edad": {
+          "Edad": 1.0,
+          "IMC": 0.0156,
+          "Actividad_Fisica": 0.0178,
+          "Nivel_Glucosa": 0.7898
+        },
+        "IMC": {
+          "Edad": 0.0156,
+          "IMC": 1.0,
+          "Actividad_Fisica": 0.0128,
+          "Nivel_Glucosa": 0.1383
+        },
+        "Actividad_Fisica": {
+          "Edad": 0.0178,
+          "IMC": 0.0128,
+          "Actividad_Fisica": 1.0,
+          "Nivel_Glucosa": -0.1984
+        },
+        "Nivel_Glucosa": {
+          "Edad": 0.7898,
+          "IMC": 0.1383,
+          "Actividad_Fisica": -0.1984,
+          "Nivel_Glucosa": 1.0
+        }
+      }
+    }
+  },
+  "energia": {
+    "title": "Consumo de energía",
+    "target": "Consumo_Energia",
+    "intercept": 101.28823172887553,
+    "coefficients": {
+      "Temperatura": {
+        "coef": 9.952865907791626,
+        "std_coef": 0.7803249630463731,
+        "p_value": 0.0
+      },
+      "Hora": {
+        "coef": 5.019813389575871,
+        "std_coef": 0.544356218448434,
+        "p_value": 0.0
+      },
+      "Dia_Semana": {
+        "coef": -3.0311766574336407,
+        "std_coef": -0.09498613673584176,
+        "p_value": 1.0412857806288042e-155
+      }
+    },
+    "metrics": {
+      "mse_train": 399.1936567789163,
+      "mse_test": 429.51869176035586,
+      "rmse_test": 20.72483273178232,
+      "r2_train": 0.9014539402878962,
+      "r2_test": 0.8968196536749335,
+      "n_train": 8000,
+      "n_test": 2000
+    },
+    "data": {
+      "rows": 10000,
+      "nulls": 0,
+      "duplicates": 0,
+      "describe": {
+        "Temperatura": {
+          "count": 10000.0,
+          "mean": 24.9248,
+          "std": 5.004,
+          "min": 5.388,
+          "25%": 21.5785,
+          "50%": 24.9005,
+          "75%": 28.311,
+          "max": 44.6312
+        },
+        "Hora": {
+          "count": 10000.0,
+          "mean": 12.4936,
+          "std": 6.9213,
+          "min": 1.0,
+          "25%": 6.0,
+          "50%": 12.0,
+          "75%": 18.0,
+          "max": 24.0
+        },
+        "Dia_Semana": {
+          "count": 10000.0,
+          "mean": 3.9994,
+          "std": 2.0,
+          "min": 1.0,
+          "25%": 2.0,
+          "50%": 4.0,
+          "75%": 6.0,
+          "max": 7.0
+        },
+        "Consumo_Energia": {
+          "count": 10000.0,
+          "mean": 400.0435,
+          "std": 63.8252,
+          "min": 185.1964,
+          "25%": 356.7353,
+          "50%": 399.2704,
+          "75%": 443.1341,
+          "max": 631.0932
+        }
+      },
+      "correlation": {
+        "Temperatura": {
+          "Temperatura": 1.0,
+          "Hora": -0.0186,
+          "Dia_Semana": -0.0069,
+          "Consumo_Energia": 0.7719
+        },
+        "Hora": {
+          "Temperatura": -0.0186,
+          "Hora": 1.0,
+          "Dia_Semana": -0.0001,
+          "Consumo_Energia": 0.529
+        },
+        "Dia_Semana": {
+          "Temperatura": -0.0069,
+          "Hora": -0.0001,
+          "Dia_Semana": 1.0,
+          "Consumo_Energia": -0.1022
+        },
+        "Consumo_Energia": {
+          "Temperatura": 0.7719,
+          "Hora": 0.529,
+          "Dia_Semana": -0.1022,
+          "Consumo_Energia": 1.0
+        }
+      }
+    }
+  }
+}
